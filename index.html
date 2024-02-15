@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang=""
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-	<div>
-		<p id="intro">Calculate your BMI (body mass index) by using the form below. Enter your weight and height and click the Calculate button to display your BMI result.</p>
-		<form action="none" method="post" name="bmiform">
-			<fieldset>
-			<legend>Height and Weight</legend>
-				<label for="pounds">Weight (pounds):</label>
-				<input type="text" name="pounds" id="pounds">
-				<br>
-				<label for="inches">Height (inches):</label>
-				<input type="text" name="inches" id="inches">
-				<br>
-				<button type="button" name="calculate" value="Calculate your BMI" onclick="calcBMI()">Calculate your BMI</button>
-			</fieldset>
-			<fieldset>
-			<legend>BMI</legend>
-				<label for="bmi" id="bmi_label">Your calculated BMI is:</label>
-				<input type="text" name="bmi" id="bmi" readonly="readonly">
-			</fieldset>
-		</form>
-	</div>
+
+    <!-- Section 1: Banner with Image and Proposition Text -->
+    <section class="main"> <div class="image-banner">
+        <img src="banner.jpg" alt="BMI Calculation"></div>
+        <h1>Get your BMI calculation in a second</h1>
+    </section>
+
+    <!-- Section 2: BMI Calculation Form -->
+    <section class="bmi-calculator">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"><br><br>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight"><br><br>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height"><br><br>
+
+            <input type="submit" value="Calculate BMI">
+        </form>
+    </section>
+
+    <!-- Section 3: BMI Output -->
+    <section class="result">
+        <p ><span id="your_name"></span> your BMI is <span id="bmiOutput"></span>.</p>
+        <p >You are <span id="bmiStatus"></span>.</p>
+    </section>
+<script src="script.js"></script>
 </body>
+</html>
