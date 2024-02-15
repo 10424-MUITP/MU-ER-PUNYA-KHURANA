@@ -1,44 +1,49 @@
-fieldset {
-	width: 300px;
-	margin: 25px 0 0 50px;
-	border: 1px solid #999999;
-	box-shadow: 1px 1px #cccccc;
-	padding: 10px;
+img{
+    width: 300px;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.main{
+    padding: 10px;
+    margin: 10px;
+    padding-left: 100px;
+}
+.bmi-calculator {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.form-group {
+    margin-bottom: 15px;
 }
 
-label {
-	float: left;
-	width: 140px;
-	display: block;
-	clear: left;
-	text-align: right;
-	padding-right: 10px;
-	margin-top: 10px;
+input[type="number"], input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
 }
-
-button {
-	margin-left: 150px;
+input[type="submit"]  {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-
-input {
-	margin-top: 10px;
-	display: block;
-	text-align: right;
-	width: 128px;
-}
-
-#bmi_label {
-	width: 200px;
-}
-
-#bmi {
-	width: 66px;
-}
-
-#intro {
-	width: 300px;
-	margin: 25px 0 0 50px;
-	padding: 10px;
-	border: 1px solid #999999;
-	box-shadow: 1px 1px #cccccc;
+.result {
+    margin-top: 15px;
+    margin-left: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
 }
